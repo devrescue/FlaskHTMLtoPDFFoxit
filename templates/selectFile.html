@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PYTHON PDF APP</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        background-color: #ffffff;
+        text-align: center;
+      }
+      h1,
+      h2 {
+        font-family: Arial, sans-serif;
+      }
+      p {
+        font-family: Georgia, serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: normal;
+        color: #0e0c36;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 style="color: #f36b16">SELECT CSV FILE:</h2>
+    <form method="POST" action="" enctype="multipart/form-data">
+      {% if sdkloaded == True %}
+      <p><input type="file" name="fin_file" accept=".csv" /></p>
+      <p><input type="submit" value="LOAD ROWS" /></p>
+      {% endif %}
+    </form>
+  </body>
+</html>

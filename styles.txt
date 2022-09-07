@@ -1,0 +1,33 @@
+<style>
+	body {
+        	background-color: #ffffff;
+        	text-align: center;
+		margin-left:auto; 
+        	margin-right:auto;
+      	}
+      	h1,
+      	h2 {
+        	font-family: Arial, sans-serif;
+      	}
+      	p {
+        	font-family: Georgia, serif;
+        	font-size: 14px;
+        	font-style: normal;
+        	font-weight: normal;
+        	color: #0e0c36;
+      	}
+      	.resultTable {
+        	font-size: 11pt; 
+        	font-family: Arial;
+        	border-collapse: collapse; 
+        	border: 1px solid silver;
+        	margin-left:auto; 
+        	margin-right:auto;
+      	}
+      	.resultTable td, th {
+        	padding: 5px;
+      	}
+      	.resultTable tr:nth-child(even) {
+        	background: #E0E0E0;
+      	}
+</style> 

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PYTHON PDF APP</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        background-color: #ffffff;
+        text-align: center;
+      }
+      h1,
+      h2 {
+        font-family: Arial, sans-serif;
+      }
+      p {
+        font-family: Georgia, serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: normal;
+        color: #0e0c36;
+      }
+    </style> 
+  </head>
+  <body>
+    {% if sdkloaded == True %}
+      <h1 style="color: #0e0c36">⚡Foxit PDF SDK loaded successfully!⚡</h1>
+      <h2 style="color: #f36b16">Welcome To The PDF App</h2>
+      <a href={{url_for('selectFile')}}>CONTINUE</a>
+    {% elif sdkloaded == False %}
+      <h1 style="color: #0e0c36">
+        ❌Foxit PDF SDK was not loaded. Verify the SN and KEY.❌
+      </h1>
+    {% else %}
+      <h1 style="color: #0e0c36">
+      ❓Foxit PDF SDK not found. Ensure the Python Library was installed
+      with pip and included in the import statement.❓
+      </h1>
+    {% endif %}
+  </body>
+</html>

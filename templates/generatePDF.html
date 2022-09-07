@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PYTHON PDF APP</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        background-color: #ffffff;
+        text-align: center;
+      }
+      h1,
+      h2 {
+        font-family: Arial, sans-serif;
+      }
+      p {
+        font-family: Georgia, serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: normal;
+        color: #0e0c36;
+      }
+    </style>
+  </head>
+  <body>
+    {% if success == True %}
+    <h3 style="color: #f36b16">
+      PDF SUCCESSFULLY GENERATED TO Report2019.pdf IN APPLICATION ROOT
+    </h3>
+    {% endif %}
+  </body>
+</html>
